@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <h1> &#127828Formulario McDonalds&#127828</h1>
+</head>
+<body>
+
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <div id="form" style="width: 350;">
+            <fieldset style="width: 800px;">
+                <legend>Informacion General</legend>
+                <label for="Nombre">Nombre: <input type="text" name="Nombre" required></label>
+                <label for="">Contraseña: <input type="password" name="Clave" required></label>
+                <button type="button" value="Enviar">Verificar usuario</button>
+            </fieldset> 
+        </div>
+        <br>
+        <div>
+            <fieldset style="width: 800px;">
+                <legend>Menu</legend>
+                <table>
+                    <td width="300">
+                        <label for="">Elegir comida:</label>
+                        <br><input type="checkbox" name="bigmac" id="1">BigMac
+                        <br><input type="checkbox" name="coca cola" id="2">Coca cola
+                        <br><input type="checkbox" name="papas fritas" id="3">Papas fritas
+                    </td>
+                    <td width="300">
+                        <label for="">Elegir tamaño:</label>
+                        <br><input type="radio" name="proporcion" value="chico" checked>Chico
+                        <br><input type="radio" name="proporcion" value="mediano">Mediano
+                        <br><input type="radio" name="proporcion" value="grande">Grande
+                    </td>
+                    <td width="300">
+                        <label for="">Elegir aderezo:</label>
+                        <select name="aderezo" >
+                            <option value="mostaza">Mostaza</option>
+                            <option value="mayonesa">Mayonesa</option>
+                            <option value="ketchup">Ketchup</option>
+                            <option value="salsagolf">Salsa Golf</option>
+                        </select>
+                    </td>
+    
+                </table>  
+            </fieldset>
+        </div>
+        <div>
+            <br><Textarea name="aclaraciones" cols="50" rows="5" placeholder="Ingresar aclaraciones"></Textarea>
+            <br><input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    
+    
+    
+    
+</body>
+</html>
